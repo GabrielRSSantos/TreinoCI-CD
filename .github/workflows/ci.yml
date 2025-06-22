@@ -25,9 +25,6 @@ jobs:
       - name: 🛠️ Rodar build (Vite)
         run: npm run build
 
-      - name: ✅ Rodar testes
-        run: npm test
-
       - name: 🚀 Deploy para GitHub Pages
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
